@@ -75,20 +75,22 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 }
 .brand{ display:flex; align-items:center; gap:12px; }
 .brand-badge{
-  width:112px; height:112px; border-radius:50%;
+  width:56px; height:56px; border-radius:50%;
   background: #fff;
   display:flex; align-items:center; justify-content:center;
-  flex-shrink:0; padding:10px;
+  flex-shrink:0; padding:6px;
   box-shadow: 0 0 0 2px var(--dorado);
   overflow:hidden;
 }
 .brand-badge svg{ width:100%; height:100%; }
 .brand-badge-image img{
   width:100%; height:100%;
-  object-fit:contain;
+  object-fit:cover;
   object-position:center;
   display:block;
   background:#fff;
+  transform: scale(1.65);
+  transform-origin: center center;
 }
 .brand-name{ font-family: var(--display); font-size:1.05rem; letter-spacing:0.03em; line-height:1.15; color:var(--texto); }
 .brand-tag{ font-family: var(--body); font-size:0.7rem; color: var(--dorado); text-transform: uppercase; letter-spacing: 0.1em; font-weight:600; }
