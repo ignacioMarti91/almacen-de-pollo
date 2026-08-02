@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Almacén de Pollo · Granja Gourmet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============================================
+     HEADER
+     ============================================ -->
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-badge">
+        <!-- Ícono de gallo, inspirado en el isologo real (círculo blanco + gallo).
+             Reemplazar por el archivo de logo definitivo del cliente cuando esté disponible. -->
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Almacén de Pollo">
+          <path fill="#121110" d="M62 18c4-3 9-4 13-2-2 3-5 5-9 6 3 1 6 3 8 6-5 1-10 0-14-3-1 3-1 6 0 9 4-1 8 0 11 3-4 2-9 2-13 0 2 4 2 9 0 13 7 2 12 8 13 15 1 4 0 8-2 11l3 9-8-4c-3 2-7 3-11 2-1 3-4 5-7 5-4 0-7-3-7-7 0-2 1-4 3-5-5-1-9-4-11-9-3-6-2-13 2-18-3 0-6-2-8-4 4-2 9-2 13 0-2-3-2-7-1-10-4 0-8-2-10-5 4-2 9-2 13 0-1-3 0-6 2-8 3-3 8-4 12-3-1-3 0-6 2-8z"/>
+          <circle cx="38" cy="40" r="2.4" fill="#fff"/>
+        </svg>
+      </div>
+      <div>
+        <div class="brand-name">Almacén de Pollo</div>
+        <div class="brand-tag">Granja Gourmet</div>
+      </div>
+    </div>
+    <a class="btn btn-wa" href="https://wa.me/541131405747" target="_blank" rel="noopener">
+      📲 Hacé tu pedido
+    </a>
+  </div>
+</header>
+
+<!-- ============================================
+     HERO
+     ============================================ -->
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="hero-eyebrow">★ San Miguel, Buenos Aires</span>
+      <h1>De la granja<br><span>directo a tu mesa.</span></h1>
+      <p>Pollo, cerdo, vacuno y congelados de calidad, armás tu pedido acá mismo y lo coordinamos por WhatsApp en minutos.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/541131405747" target="_blank" rel="noopener">📲 Consultar por WhatsApp</a>
+        <a class="btn btn-ghost" href="#catalogo">Ver catálogo</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>🛵 Envíos y horarios</h3>
+      <ul>
+        <li>Envíos a domicilio en la zona</li>
+        <li>Lun a Vie · 9 a 20 hs</li>
+        <li>Sáb · 9 a 13:30 hs</li>
+        <li>Retiro en Rodríguez Peña 835</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     NAV DE CATEGORÍAS (se completa por JS más adelante)
+     ============================================ -->
+<nav class="cat-nav" id="catNav" aria-label="Categorías del catálogo">
+  <div class="container" id="catNavList"></div>
+</nav>
+
+<!-- ============================================
+     CÓMO COMPRAR
+     ============================================ -->
+<section class="pasos">
+  <div class="container">
+    <h2>Cómo comprar</h2>
+    <div class="pasos-grid">
+      <div class="paso">
+        <span class="paso-n">1</span>
+        <h3>Armá tu pedido</h3>
+        <p>Elegí productos del catálogo y sumalos a tu ticket con el botón "Agregar".</p>
+      </div>
+      <div class="paso">
+        <span class="paso-n">2</span>
+        <h3>Revisá el ticket</h3>
+        <p>Ajustá cantidades desde el carrito, en la esquina de la pantalla.</p>
+      </div>
+      <div class="paso">
+        <span class="paso-n">3</span>
+        <h3>Enviá por WhatsApp</h3>
+        <p>Un botón manda tu pedido armado directo a nuestro WhatsApp para coordinar entrega o retiro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     COMBOS ARMADOS
+     ============================================ -->
+<section class="combos-showcase" aria-label="Combos armados">
+  <div class="container">
+    <div class="section-title-wrap">
+      <div>
+        <span class="eyebrow">Combos armados</span>
+        <h2>Elegí tu combinación ideal</h2>
+      </div>
+      <p>Propuestas rápidas para armar un pedido más completo y práctico.</p>
+    </div>
+
+    <div class="combo-carousel" data-carousel>
+      <button class="combo-arrow combo-prev" type="button" aria-label="Ver combos anteriores">‹</button>
+
+      <div class="combo-track" data-track>
+        <article class="combo-card">
+          <div class="combo-media combo-media-1">
+            <span class="combo-badge">Combo 1</span>
+            <span class="combo-label">Granja + salsas</span>
+          </div>
+          <div class="combo-info">
+            <h3>Combo para asado</h3>
+            <ul>
+              <li>1 kg de pollo entero</li>
+              <li>1 kg de pechuga</li>
+              <li>2 salsas a elección</li>
+            </ul>
+            <div class="combo-price">Desde $ 18.500</div>
+          </div>
+        </article>
+
+        <article class="combo-card">
+          <div class="combo-media combo-media-2">
+            <span class="combo-badge">Combo 2</span>
+            <span class="combo-label">Punta a punta</span>
+          </div>
+          <div class="combo-info">
+            <h3>Combo familiar</h3>
+            <ul>
+              <li>1 kg de pata muslo</li>
+              <li>1 kg de costillitas</li>
+              <li>1 porción de papas</li>
+            </ul>
+            <div class="combo-price">Desde $ 22.900</div>
+          </div>
+        </article>
+
+        <article class="combo-card">
+          <div class="combo-media combo-media-3">
+            <span class="combo-badge">Combo 3</span>
+            <span class="combo-label">Carnes + snacks</span>
+          </div>
+          <div class="combo-info">
+            <h3>Combo para compartir</h3>
+            <ul>
+              <li>Bondiola y pechito</li>
+              <li>Snacks para picar</li>
+              <li>Aderezo + condimentos</li>
+            </ul>
+            <div class="combo-price">Desde $ 27.300</div>
+          </div>
+        </article>
+      </div>
+
+      <button class="combo-arrow combo-next" type="button" aria-label="Ver más combos">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CATÁLOGO (se completa por JS más adelante)
+     ============================================ -->
+<main class="catalogo container" id="catalogo">
+  <div id="catalogRoot"></div>
+</main>
+
+<!-- ============================================
+     POR QUÉ ELEGIRNOS
+     ============================================ -->
+<section class="confianza">
+  <div class="container">
+    <h2>Por qué elegirnos</h2>
+    <div class="conf-item">
+      <span class="num">01</span>
+      <h3>Siempre fresco</h3>
+      <p>Recibimos mercadería seguido y separamos lo que va directo al freezer para que llegue en su punto.</p>
+    </div>
+    <div class="conf-item">
+      <span class="num">02</span>
+      <h3>Prolijo, de punta a punta</h3>
+      <p>Cortes parejos, envasado prolijo y buena presentación en cada pedido, sea chico o grande.</p>
+    </div>
+    <div class="conf-item">
+      <span class="num">03</span>
+      <h3>Variedad real</h3>
+      <p>Más de 100 productos entre pollo, cerdo, vacuno, congelados, salsas y delicatessen, todo en un solo lugar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     UBICACIÓN
+     ============================================ -->
+<section class="ubicacion">
+  <div class="container">
+    <div>
+      <h2>Ubicación y contacto</h2>
+      <ul class="info-list">
+        <li><b>📍 Dirección:</b> Rodríguez Peña 835, San Miguel, Buenos Aires</li>
+        <li><b>📱 WhatsApp:</b> <a href="https://wa.me/541131405747" target="_blank" rel="noopener">11 3140-5747</a></li>
+        <li><b>🕒 Horarios:</b> Lun a Vie 9-20 hs · Sáb 9-13:30 hs · Dom cerrado</li>
+      </ul>
+      <a class="btn btn-wa" href="https://wa.me/541131405747" target="_blank" rel="noopener">📲 Escribinos ahora</a>
+    </div>
+    <div class="map-embed">
+      <iframe
+        title="Ubicación Almacén de Pollo"
+        loading="lazy"
+        src="https://www.google.com/maps?q=Rodr%C3%ADguez+Pe%C3%B1a+835,+San+Miguel,+Buenos+Aires&output=embed">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container site-footer-inner">
+    <div class="footer-brand">
+      <p><strong>Almacén de Pollo · Granja Gourmet</strong></p>
+      <p>Carne fresca, cortes de calidad y atención directa en San Miguel.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="https://wa.me/541131405747" target="_blank" rel="noopener">WhatsApp: 11 3140-5747</a></li>
+        <li><a href="mailto:hola@almacendepollo.com.ar">hola@almacendepollo.com.ar</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram: @almacendepollo</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook: /almacendepollo</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>Visitanos</h4>
+      <ul>
+        <li>Rodríguez Peña 835</li>
+        <li>San Miguel, Buenos Aires</li>
+        <li>Lun a Vie 9-20 hs · Sáb 9-13:30 hs</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================
+     CARRITO FLOTANTE (se completa por JS más adelante)
+     ============================================ -->
+<div class="overlay" id="overlay"></div>
+
+<button class="cart-fab" id="cartFab" hidden>
+  🧾 <span class="label">Ver pedido</span>
+  <span class="count" id="cartCount">0</span>
+</button>
+
+<aside class="cart-panel" id="cartPanel" aria-label="Tu pedido">
+  <div class="cart-panel-head">
+    <h2>🧾 Tu pedido</h2>
+    <button class="cart-close" id="cartClose" aria-label="Cerrar carrito">✕</button>
+  </div>
+  <div class="ticket" id="ticketBody">
+    <p class="ticket-empty">Todavía no agregaste productos.<br>Volvé al catálogo y tocá "Agregar".</p>
+  </div>
+  <div class="customer-form">
+    <div class="field">
+      <label for="clienteNombre">Nombre</label>
+      <input id="clienteNombre" type="text" placeholder="Tu nombre" autocomplete="name">
+    </div>
+
+    <div class="field">
+      <label for="clienteDireccion">Dirección</label>
+      <input id="clienteDireccion" type="text" placeholder="Calle y número" autocomplete="street-address">
+    </div>
+
+    <div class="field">
+      <label for="clienteObservaciones">Observaciones</label>
+      <textarea id="clienteObservaciones" rows="3" placeholder="¿Algo para aclarar?"></textarea>
+    </div>
+
+    <label class="checkbox-row" for="vaciarDespues">
+      <input id="vaciarDespues" type="checkbox">
+      <span>Vaciar carrito después de enviar</span>
+    </label>
+  </div>
+
+  <div class="cart-panel-foot">
+    <div class="cart-total"><span>Total</span><b id="cartTotal">$0</b></div>
+    <a class="btn btn-primary btn-block" id="sendWa" href="#" target="_blank" rel="noopener">
+      📲 Enviar pedido por WhatsApp
+    </a>
+    <p class="cart-note">Los precios pueden variar sin previo aviso. Se confirman por WhatsApp antes de cerrar la compra.</p>
+  </div>
+</aside>
+
+<div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+
+<script src="js/catalog-data.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/app.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
