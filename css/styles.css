@@ -253,10 +253,26 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 /* ============================================
    CATÁLOGO
    ============================================ */
-.catalogo{ padding: 28px 0 20px; }
-.cat-section{ margin-bottom: 52px; scroll-margin-top: 150px; }
-.cat-section-head{ display:flex; align-items:baseline; gap:14px; margin-bottom:20px; border-bottom:3px solid var(--dorado); padding-bottom:10px; }
+.catalogo{ counter-reset: categoria; padding: 28px 0 20px; }
+.cat-section{
+  margin-bottom: 30px; scroll-margin-top: 150px;
+  background: var(--bg-elev);
+  border: 1px solid var(--linea);
+  border-radius: 14px;
+  padding: 28px 24px 34px;
+}
+.cat-section-head{
+  display:flex; align-items:baseline; gap:14px; margin-bottom:22px;
+  border-bottom:1px solid var(--linea); padding-bottom:14px;
+  counter-increment: categoria;
+}
 .cat-section-head h2{ font-size:1.5rem; }
+.cat-section-head h2::before{
+  content: counter(categoria, decimal-leading-zero) " — ";
+  color: var(--texto-suave);
+  font-size: 0.6em;
+  vertical-align: middle;
+}
 .cat-section-head .cat-count{ font-family: var(--mono); font-size:0.8rem; color: var(--texto-suave); }
 
 .grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap:18px; }
@@ -268,7 +284,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   position:relative;
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
-.card:hover{ border-color: var(--dorado); transform: translateY(-3px); }
+.card:hover{ border-color: rgba(245,239,230,0.35); transform: translateY(-3px); }
 
 .card-img{
   width:100%; aspect-ratio: 4 / 3;
@@ -298,14 +314,14 @@ a:focus-visible, button:focus-visible, input:focus-visible{
 
 .stepper{
   display:flex; align-items:center; justify-content:space-between;
-  background: var(--bg-elev-2); border:1.5px solid var(--dorado); border-radius: var(--radius);
+  background: var(--bg-elev-2); border:1.5px solid rgba(245,239,230,0.25); border-radius: var(--radius);
   width:100%; padding:4px; margin-top:4px;
 }
 .stepper button{
-  width:32px; height:32px; border-radius:5px; background:var(--dorado); color:#1A1305; font-size:1.1rem; font-weight:800;
+  width:32px; height:32px; border-radius:5px; background:rgba(245,239,230,0.12); color:#fff; font-size:1.1rem; font-weight:800;
   display:flex; align-items:center; justify-content:center;
 }
-.stepper button:hover{ background: var(--dorado-claro); }
+.stepper button:hover{ background: rgba(245,239,230,0.22); }
 .stepper .qty-value{ font-family: var(--mono); font-weight:700; font-size:0.95rem; }
 
 .badge-promo{
